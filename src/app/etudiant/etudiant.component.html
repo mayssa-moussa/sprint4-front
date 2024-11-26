@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card shadow mb-4">
+    <div class="card-body">
+     <table class="table table-striped">
+        <tr> <th>Nom</th> <th>Prenom</th> <th>Classe</th> <th>Email</th> <th>Date Naissance</th> </tr>
+              <tbody >
+                       <tr *ngFor="let etudiant of etudiants">
+                          <td>{{etudiant.nom}}</td>
+                          <td>{{etudiant.prenom}}</td>
+                          <td>{{etudiant.classe}}</td>
+                          <td>{{etudiant.email}}</td>
+                          <td>{{etudiant.dateNaiss | date:'dd/MM/yyyy'}}</td>
+                        </tr>
+               </tbody>
+    </table>
+    </div>
+  </div>
+</div>
